@@ -1,0 +1,17 @@
+<template>
+    <!-- <lightning-avatar src={flagimage}></lightning-avatar> -->
+     
+
+        <div class="slds-scrollable_y">
+          <lightning-layout horizontal-align="center" multiple-rows>
+            
+            <template for:each={countryMap} for:item="country">
+              <lightning-layout-item key={country.key} padding="around-small">
+                  <lightning-avatar src={country.value.flag}></lightning-avatar>
+              </lightning-layout-item>
+            </template>
+          </lightning-layout>
+        </div>
+   
+
+</template>
